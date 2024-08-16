@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=1"> 
+    <title>Tool Web</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="icon" href="assets/img/logo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid" bis_skin_checked="1">
+          <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="icon" style="height: 35px; margin-right: 8px;">Tool Web</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor01" bis_skin_checked="1">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">首頁</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">小工具</a>
+                <div class="dropdown-menu" bis_skin_checked="1">
+                  <a class="dropdown-item" href="er.html">匯率轉換器</a>
+                  <a class="dropdown-item" href="ip.html">IP資訊查詢</a>
+                  <a class="dropdown-item" href="gody.html">xx伺服器狀態</a>
+                  <div class="dropdown-divider" bis_skin_checked="1"></div>
+                  <a class="dropdown-item active" href="#">Minecraft玩家查詢</a>
+                  <a class="dropdown-item" href="mcs.html">Minecraft伺服器查詢</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">快速聯絡</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+
+    <div bis_skin_checked="1" style="margin-right: 16px; margin-left: 16px;">
+        <fieldset>
+          <label class="form-label mt-4">請輸入Minecraft玩家ID</label>
+          <input class="form-control" id="mcid" type="text" value="rich0934">
+        </fieldset>
+    </div>
+
+    <div class="card border-primary mb-3" style="max-width: auto; margin-top: 16px; margin-right: 16px; margin-left: 16px;" bis_skin_checked="1">
+        <div class="card-body" bis_skin_checked="1">
+            <img id="hard" style="max-width: auto; height: auto; margin-top: 16px; margin-bottom: 16px; padding: 0 16px; box-sizing: border-box;">
+            <img id="skin" style="max-width: auto; height: auto; margin-top: 16px; margin-bottom: 16px; padding: 0 16px; box-sizing: border-box;">
+            <h4 class="card-title"><span id="name">Loading...</span> 的資訊</h4>
+            <p class="card-text"><div class="info" id="playerInfo"></div></p>
+        </div>
+    </div>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/mcp.js"></script>
+</body>
+</html>
