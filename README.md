@@ -26,6 +26,8 @@
 ![image](https://github.com/Ray1020-a/Tool-Web/blob/main/img/07.png)
 - 所有功能展示
 
+- 前端框架使用[Bootstrap](https://getbootstrap.com/)
+
 **本專案使用的所有API Token都存放在JavaScript前端，若要使用請自行做隱藏作業**
 
 ## 📃License | 開源許可證
